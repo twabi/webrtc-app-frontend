@@ -48,6 +48,11 @@ const ContextProvider = ({ children }) => {
 
     peer.on("stream", (currentStream) => {
       userVideo.current.srcObject = currentStream;
+        setInterval(() => {
+            peer.getStats((err, stats) => {
+                console.log(stats);
+            });
+        }, 20000);
     });
 
     peer.signal(call.signal);
@@ -69,6 +74,13 @@ const ContextProvider = ({ children }) => {
 
     peer.on("stream", (currentStream) => {
       userVideo.current.srcObject = currentStream;
+
+        setInterval(() => {
+            peer.getStats((err, stats) => {
+                console.log(err)
+                console.log(stats);
+            });
+        }, 20000);
     });
 
     socket.on("callAccepted", (signal) => {

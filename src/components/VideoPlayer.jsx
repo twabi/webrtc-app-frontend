@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Grid, Box, Heading } from "@chakra-ui/react";
 import { SocketContext } from "../Context.js";
 import { useContext } from "react";
@@ -13,6 +13,8 @@ const VideoPlayer = () => {
     stream,
     call
   } = useContext(SocketContext);
+
+
   return (
     <Grid
       justifyContent="center"
