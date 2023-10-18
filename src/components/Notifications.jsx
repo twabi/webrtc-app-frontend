@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Box, Button, Heading } from "@chakra-ui/react";
-import { SocketContext } from "../Context";
+import { SocketContext } from "../Context.js";
 
 const Notifications = () => {
   const { answerCall, call, callAccepted } = useContext(SocketContext);

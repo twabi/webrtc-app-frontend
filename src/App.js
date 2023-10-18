@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Heading, Container } from "@chakra-ui/react";
-import Notifications from "./components/Notifications";
-import Options from "./components/Options";
-import VideoPlayer from "./components/VideoPlayer";
+import Notifications from "./components/Notifications.jsx";
+import Options from "./components/Options.jsx";
+import VideoPlayer from "./components/VideoPlayer.jsx";
 
 function App() {
   return (

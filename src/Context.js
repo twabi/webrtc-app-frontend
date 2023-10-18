@@ -4,7 +4,7 @@ import Peer from "simple-peer";
 
 const SocketContext = createContext();
 
-const socket = io("http://172.16.0.13:8080");
+const socket = io("http://133.41.117.94:8080");
 
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);

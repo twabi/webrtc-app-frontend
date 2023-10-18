@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { BiClipboard, BiPhoneCall, BiPhoneOff } from "react-icons/bi";
-import { SocketContext } from "../Context";
+import { SocketContext } from "../Context.js";
 
 const Options = () => {
   const {
